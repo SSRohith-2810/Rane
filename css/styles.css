@@ -11,7 +11,7 @@ body {
 }
 @font-face {
   font-family: 'ZTChintzy-Bold';
-  src: url('/fonts/ZTChintzy-Bold.ttf') format('truetype');
+  src: url('ZTChintzy-Bold.ttf') format('truetype');
 }
 .background{
   width: 100%;
