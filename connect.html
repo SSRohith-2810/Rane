@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/connect.css">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style="background-color: #ebe6d3;">
+    <div class="main">
+        <nav class="navbar navbar-expand-lg" style=" position: fixed; ">
+            <div class="container-fluid">
+              <a class="navbar-brand" style="background-color: #ebe6d3;" href="#"><img style="background-color: #ebe6d3;" src="assets/img/rane.png" alt="..." /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="container-fluid">
+                <div class="row justify-content-end">
+                  <div class="col-auto">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="product page.html">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#products">CONTACT</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link" href="#test">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="menuBtn"><i class="fas fa-shopping-cart "></i></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#pod"><i class="fas fa-user"></i></a>
+                      </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>       
+            </div>
+          </nav>
+
+          <div class="foot" style="width: 100%; text-align: center; margin-top: 88px;">
+            <img style="width: 100%;" src="assets/img/strip1.png" alt="">
+          </div>
+
+        <div class="head-img" style="margin-top: 0%; position: absolute;">
+            <h1 style="color: #ebe6d3; text-align: center; margin-top: 50px; position: relative;">CONNECT WITH US</h1>
+            <div style="width: 100%; display: flex; justify-content:center; align-items: center; height: 400px;">
+                <div style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;width: 70%; height: 400px;">
+            <form style="height: 390px; width: 95%; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;" id="feedbackForm" onsubmit="return validateForm()">
+
+                <div style="display: flex; width: 99%; flex-direction: row; justify-content: space-between;">
+                <div class="name" style="border: 5px solid #ebe6d3; border-radius: 60px; height: 60px; width: 120%; display: flex; align-items: center;">  
+                <label style="color: #ebe6d3; font-size: larger;" for="name">&nbsp;NAME:</label>&nbsp;
+                <input style="width: 80%; height: 45px; border-radius: 15px; background-color: transparent; border: none; outline: none; font-size: larger;" type="text" id="name" name="name" required>
+                <span id="nameError" class="error"></span><br><br>
+                </div>
+                
+                <div class="email" style="border: 5px solid #ebe6d3; margin-left: 25px; border-radius: 60px; height: 60px; width: 120%; display: flex; align-items: center;">
+                <label  style="color: #ebe6d3; font-size: larger;" for="email">&nbsp;MAIL ID:</label>&nbsp;
+                <input style="width: 70%; height: 45px; border-radius: 15px; background-color: transparent; border: none; outline: none; font-size: larger;" type="email" id="email" name="email" required>
+                <span id="emailError" class="error"></span><br><br>
+                </div>
+                </div>
+                
+                <div class="order" style="border: 5px solid #ebe6d3; border-radius: 60px; height: 60px; width: 100%; display: flex; align-items: center;">
+                <label  style="color: #ebe6d3; font-size: larger;" for="orderID">&nbsp;ORDER ID:</label>&nbsp;
+                <input style="width: 80%; height: 45px; border-radius: 15px; background-color: transparent; border: none; outline: none; font-size: larger;" type="text" id="orderID" name="orderID" required>
+                <span id="orderIDError" class="error"></span><br><br>
+                </div>
+                
+                <div class="comment" style="border: 5px solid #ebe6d3; border-radius: 30px; height: 100px; width: 100%; display: flex; align-items: center;">
+                <label  style="color: #ebe6d3; font-size: larger; margin-bottom: 40px;" for="comment">&nbsp;COMMENT:</label><br>&nbsp;
+                <textarea style="width: 80%; height: 75px; border-radius: 15px; background-color: transparent; border: none; outline: none; font-size: larger;" id="comment" name="comment" rows="2" cols="50" required></textarea>
+                <span id="commentError" class="error"></span><br><br>
+                </div>
+        
+                <input class="button-83" type="submit" value="SEND">
+            </form>
+        </div>
+        </div>
+        </div>
+
+        <div id="sideNav">
+            <nav>
+              <h3 style="text-align: center; margin-top: 30px; color: #A51B25;">YOUR CART</h3>
+              <hr style="margin-top: 24px; border-width: 3px; color: black">
+              <div style="width: 100%; height: 86vh; display: flex; justify-content: space-between; align-items: center;flex-direction: column; ">
+                <div class="rows" style="width: 95%; display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                  <div>
+                    <img style="width: 120px; height: 120px;" src="assets/img/P1.png">
+                  </div>
+                  <div>
+                  <h6>Relax fit summer shirt</h6>
+                  <h6>Rs. 999/-</h6>
+                  <h6>size: m</h6>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                  <div class="col-2 d-flex justify-content-center align-items-center" style="margin-left: 21px;">
+                    <!-- Content for sub-division 5 -->
+                    <button style="color: #A51B25;" onclick="decrement(this)" class="ms-2 buttons-div">-</button>&nbsp;&nbsp;&nbsp;
+                    <span class="quantity">0</span>&nbsp;&nbsp;&nbsp;
+                    <button style="color: #A51B25;" onclick="increment(this)" class="me-2 buttons-div">+</button>
+                  </div>
+                  <i style="color: #A51B25;" class="fas fa-trash-alt"></i>
+                </div>
+                </div>
+                </div>
+    
+                <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+                  <div style="width: 95%;">
+                    <hr style="margin-top: 24px; border-width: 3px; color: black">
+                  <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                    <h6>ESTIMATED TOTAL</h6>
+                    <h6>Rs. 999.00</h6>
+                  </div>
+                  <p style="font-size: x-small;">(Inclusive of all taxes)</p>
+                </div>
+              </div>
+              </div>
+            </nav>
+            </div>
+
+
+          <div class="footer2" style="position: relative; margin-top: 36.5%;">
+            <ul style="list-style-type: none; padding: 0; margin: 0; display:flex">
+              <li>© 2024, RANE</li>
+              <li>.</li>
+              <li>TERMS AND CONDITIONS</li>
+              <li>.</li>
+              <li>CONTACT INFORMATION</li>     
+            </ul>
+          </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let orderID = document.getElementById('orderID').value;
+            let comment = document.getElementById('comment').value;
+
+            let nameError = document.getElementById('nameError');
+            let emailError = document.getElementById('emailError');
+            let orderIDError = document.getElementById('orderIDError');
+            let commentError = document.getElementById('commentError');
+
+            let valid = true;
+
+            nameError.textContent = '';
+            emailError.textContent = '';
+            orderIDError.textContent = '';
+            commentError.textContent = '';
+
+            // Name validation
+            if (!name) {
+                nameError.textContent = 'Name is required';
+                valid = false;
+            }
+
+            // Email validation
+            if (!email) {
+                emailError.textContent = 'Email is required';
+                valid = false;
+            } else if (!isValidEmail(email)) {
+                emailError.textContent = 'Invalid email format';
+                valid = false;
+            }
+
+            // Order ID validation
+            if (!orderID) {
+                orderIDError.textContent = 'Order ID is required';
+                valid = false;
+            }
+
+            // Comment validation
+            if (!comment) {
+                commentError.textContent = 'Comment is required';
+                valid = false;
+            }
+
+            return valid;
+        }
+
+        function isValidEmail(email) {
+            // Basic email validation regex
+            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+
+    
+ <script>
+    var menuBtn = document.getElementById("menuBtn");
+    var sideNav = document.getElementById("sideNav");
+    var menu = document.getElementById("menu");
+  
+    sideNav.style.right = "-400px";
+  
+    menuBtn.onclick = function(event) {
+      event.stopPropagation(); // Prevent the click event from reaching the document body
+      if (sideNav.style.right == "-400px") {
+        sideNav.style.right = "0";
+      }
+    };
+  
+    document.body.addEventListener('click', function(event) {
+      if (event.target !== menuBtn && !sideNav.contains(event.target)) {
+        sideNav.style.right = "-400px";
+      }
+    });
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+   <script>
+    function increment(button) {
+        let row = button.closest('.rows');
+        let quantitySpan = row.querySelector('.quantity');
+
+        let currentQuantity = parseInt(quantitySpan.innerText, 10);
+        quantitySpan.innerText = currentQuantity + 1;
+    }
+
+    function decrement(button) {
+        let row = button.closest('.rows');
+        let quantitySpan = row.querySelector('.quantity');
+
+        let currentQuantity = parseInt(quantitySpan.innerText, 10);
+        if (currentQuantity > 1) {
+            quantitySpan.innerText = currentQuantity - 1;
+        }
+    }
+</script>
+
+</body>
+</html>

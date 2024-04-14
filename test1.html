@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header>
+<div class="logo">RANE</div>
+<div class="tagline">NEVER THE SAME NEVER THE SAME NEVER THE SAME</div>
+<nav>
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">MALE</a></li>
+<li><a href="#">PRODUCT</a></li>
+<li><a href="#">CHECKOUT</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class="form-section">
+<h1>CONTACT</h1>
+<form>
+<label for="email">Email Address</label><br>
+<input type="email" id="email" name="email"><br>
+<label for="fname">First name</label><br>
+<input type="text" id="fname" name="fname"><br>
+<label for="lname">Last name</label><br>
+<input type="text" id="lname" name="lname"><br>
+<label for="address">Address</label><br>
+<input type="text" id="address" name="address"><br>
+<label for="city">City</label><br>
+<input type="text" id="city" name="city"><br>
+<label for="phone">Phone number</label><br>
+<input type="tel" id="phone" name="phone"><br>
+<label for="pincode">Pincode</label><br>
+<input type="text" id="pincode" name="pincode"><br>
+</form>
+</section>
+<section class="payment-section">
+<h1>PAYMENT</h1>
+<div class="payment-option">
+<input type="radio" id="gateway" name="payment" value="gateway">
+<label for="gateway">Payment gateway (UPL,CARD and NET BANKING)</label><br>
+</div>
+<div class="payment-option">
+<input type="radio" id="cod" name="payment" value="cod">
+<label for="cod">CASH ON DELIVERY (COD)</label><br>
+</div>
+<div class="billing-section">
+<h2>BILLING ADDRESS</h2>
+<div class="same-address">
+<input type="radio" id="same" name="billing" value="same">
+<label for="same">same as shipping address</label><br>
+</div>
+<div class="different-address">
+<input type="radio" id="different" name="billing" value="different">
+<label for="different">use different address for shipping</label><br>
+</div>
+</div>
+<button class="pay-button">PAY NOW</button>
+</section>
+<aside class="product-section">
+<h1>SHOP</h1>
+<div class="product">
+<img src="product.jpg" alt="Relax fit summer shirt">
+<h2>Relax fit summer</h2>
+</div>
+</aside>
+</main>
+</body>
+</html>
